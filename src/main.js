@@ -145,5 +145,9 @@
       $('.ifYes').css('visibility', 'hidden')
     }
   }
-  const adminName = document.querySelector('#admin-input').value
-  document.querySelector('.admin-name').innerHTML = adminName
+  function setStorage() {
+    const adminName = document.getElementById('admin-input').value
+    localStorage.setItem('admin', adminName);
+  }
+  const reg = document.getElementById('reg').addEventListener('click' , setStorage)
+  document.querySelector('.admin-name').innerHTML = localStorage.getItem('admin');
