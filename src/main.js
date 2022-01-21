@@ -150,6 +150,10 @@
     localStorage.setItem('admin', adminName);
     console.log(adminName);
   }
+  function getStorage() {
+    const setAdmin = localStorage.getItem('admin');
+    document.querySelector('.admin-name').textContent = setAdmin
+    console.log(setAdmin);
+  }
   const reg = document.getElementById('reg').addEventListener('click' , setStorage);
-  
-  document.querySelector('.admin-name').textContent = localStorage.getItem('admin');
+  const regTwo = document.getElementById('reg2').addEventListener('click' , getStorage);
