@@ -612,6 +612,9 @@ body {
   height: 500px;
   border-radius: 10px;
 }
+#mail {
+  text-transform: lowercase;
+}
 @media only screen and (max-width: 500px) {
   #reg-form {
     width: 100%;
