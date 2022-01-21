@@ -148,6 +148,8 @@
   function setStorage() {
     const adminName = document.getElementById('admin-input').value
     localStorage.setItem('admin', adminName);
+    console.log(adminName);
   }
-  const reg = document.getElementById('reg').addEventListener('click' , setStorage)
-  document.querySelector('.admin-name').innerHTML = localStorage.getItem('admin');
+  const reg = document.getElementById('reg').addEventListener('click' , setStorage);
+  
+  document.querySelector('.admin-name').textContent = localStorage.getItem('admin');
