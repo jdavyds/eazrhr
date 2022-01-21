@@ -152,8 +152,9 @@
   }
   function getStorage() {
     const setAdmin = localStorage.getItem('admin');
-    document.querySelector('.admin-name').textContent = setAdmin
+    const content = document.querySelector('.admin-name')
+    content.textContent = setAdmin
     console.log(setAdmin);
   }
   const reg = document.getElementById('reg').addEventListener('click' , setStorage);
-  const regTwo = document.getElementById('reg2').addEventListener('click' , getStorage);
+  const success = document.getElementById('success').addEventListener('load' , getStorage);
