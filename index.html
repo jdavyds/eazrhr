@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Eazr</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./packages/bootstrap/bootstrap.min.css">
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="./packages/aos/aos.css">
+  <!-- Themify CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css">
+  <!-- OWL CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css">
+  <!-- Animate -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- App icon -->
+  <link rel="shortcut icon" href="/static/brand/icon.png" type="image/x-icon">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./src/main.css">
+</head>
+
+<body>
+  <header class="ui-header">
+    <div class="container-fluid">
+      <div class="col-lg-10 mx-auto p-0">
+        <nav class="ui-nav">
+          <div class="ui-nav__left">
+            <div class="ui-nav__brand">
+              <a href="/">
+                <img src="./static/brand/logo.svg" alt="Eazr logo">
+              </a>
+            </div>
+            <div class="ui-nav__menu">
+              <ul class="ui-nav__menu-list">
+                <li class="ui-nav__menu-item">
+                  <a href="/product" class="ui-nav__menu-link ui-body__text">Product</a>
+                </li>
+                <li class="ui-nav__menu-item">
+                  <a href="/pricing" class="ui-nav__menu-link ui-body__text">Pricing</a>
+                </li>
+                <li class="ui-nav__menu-item">
+                  <a href="/use_cases" class="ui-nav__menu-link ui-body__text">Use Cases</a>
+                </li>
+                <li class="ui-nav__menu-item">
+                  <a href="/faq" class="ui-nav__menu-link ui-body__text">FAQs</a>
+                </li>
+                <li class="ui-nav__menu-item">
+                  <a href="/company" class="ui-nav__menu-link ui-body__text">Company</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="ui-nav__right">
+            <a href="get_started" class="ui-btn ui-btn--primary">Sign up for free</a>
+          </div>
+          <span class="ui-nav-toggle toggleMenu" id="openMenu">
+            <span class="one"></span>
+            <span class="two"></span>
+            <span class="three"></span>
+          </span>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- Navbar (mobile) Start -->
+  <nav class="ui-mobile-nav" id="mobileMenu">
+    <div class="menu w-100">
+      <div class="menu-body">
+        <a href="/" class="menu-link ">
+          Home
+        </a>
+        <a href="/product" class="menu-link ">
+          Product
+        </a>
+        <a href="/pricing" class="menu-link">
+          Pricing
+        </a>
+        <a href="/use_cases" class="menu-link ">
+          Use Cases
+        </a>
+        <a href="/faq" class="menu-link ">
+          FAQs
+        </a>
+        <a href="/company" class="menu-link ">
+          Company
+        </a>
+        <div class="menu-footer">
+          <a href="get_started" class="ui-btn ui-btn--primary w-100">
+            Sign up for free
+          </a>
+        </div>
+      </div>
+
+      <span class="close toggleMenu" id="closeMenu">
+        <i class="ti-close"></i>
+      </span>
+    </div>
+  </nav>
+  <!-- Navbar (mobile) End  -->
+  <!-- Modal -->
+  <div class="video-modal modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <div class="modal-body">
+
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <!-- 16:9 aspect ratio -->
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="w-100" src="https://www.youtube.com/embed/HzrYqs-cTmo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <section class="ui-hero">
+    <div class="container">
+      <div class="ui-hero__content">
+        <div class="row align-items-center">
+          <div class="col-lg-6 pt-4">
+            <h1 class="ui-hero__title ui-text__dark-blue ui-body__h1--mid ">
+              Managing your company’s
+              HR just got
+              <span class="ui-body__h1 ui-text__primary-blue">Eazr.</span>
+            </h1>
+            <p class="ui-hero__desc ui-text__grey">
+              We make all things HR easier (Eazr). All you have to do is
+              automate your HR tasks on one trusted platform.
+
+            </p>
+            <div id="email">
+              <div class="container mt-5 mb-3">
+                <div class="row">
+                  <div class="col-sm-12 p-0">
+                    <div class="ui-input__group">
+                      <form class="ui-input__group_form" action="get_started">
+                        <div class="input-group">
+                          <span class="d-flex align-items-center p-1 bg-white ui-text__grey" id="basic-addon3">
+                            <i class="ti-email pl-1"></i>
+                          </span>
+                          <input type="email" class="form-control" name="email" placeholder="Enter your email" required>
+                          <span class="input-group-btn">
+                            <button class="ui-btn ui-btn--primary" type="submit">Sign up for free</button>
+                          </span>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-4">
+              <ul class="ui-section__list">
+                <li class="ui-section__list- d-inline-flex mr-1">
+                  <img src="./static/icons/check.svg" alt=""> <span> No Debit Card required</span>
+                </li>
+                <li class="ui-section__list- d-inline-flex mr-1">
+                  <img src="./static/icons/check.svg" alt=""> <span> Cancel anytime</span>
+                </li>
+                <li class="ui-section__list- d-inline-flex mr-1">
+                  <img src="./static/icons/check.svg" alt=""> <span> Easy setup</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 pt-4">
+            <img src="./static/images/home/1.jpeg" class="ui-hero__img" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="ui-section is--small">
+    <div class="container">
+      <div class="ui-section__content">
+        <p class="ui-body__text-bolder ui-text__dark-blue">Trusted By</p>
+        <div class="col-lg-7">
+          <div class="row">
+            <div class="col-lg-3 col-6 mt-4">
+              <img src="./static/images/home/logos/1.png" alt="">
+            </div>
+            <div class="col-lg-3 col-6 mt-4">
+              <img src="./static/images/home/logos/2.png" alt="">
+            </div>
+            <div class="col-lg-3 col-6 mt-4">
+              <img src="./static/images/home/logos/3.png" alt="">
+            </div>
+            <div class="col-lg-3 col-6 mt-4">
+              <img src="./static/images/home/logos/4.png" alt="">
+            </div>
+            <div class="col-lg-3 col-6 mt-4">
+              <img src="./static/images/home/logos/1.png" alt="">
+            </div>
+            <div class="col-lg-3 col-6 mt-4">
+              <img src="./static/images/home/logos/2.png" alt="">
+            </div>
+            <div class="col-lg-3 col-6 mt-4">
+              <img src="./static/images/home/logos/3.png" alt="">
+            </div>
+            <div class="col-lg-3 col-6 mt-4">
+              <img src="./static/images/home/logos/4.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="ui-section is--large">
+    <div class="container">
+      <div class="ui-section__content">
+        <div class="row align-items-center">
+          <div class="col-lg-6 p-0">
+            <div class="position-r">
+              <!-- <a href="#!" class="ui-play-btn" data-toggle="modal" data-target="#">
+                <img src="./static/icons/bi_play-circle-fill.svg" alt="">
+              </a> -->
+              <img src="./static/images/about/1.png" class="ui-section__img" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="col-lg-10 mx-auto">
+              <div class="py-5">
+                <h3 class="ui-body__h3 ui-text__dark-blue mb-4">
+                  About EAZR
+                </h3>
+                <p class="ui-body__text ui-text__dark-blue">
+                  Eazr is an innovative platform designed to streamline human resource operations and improve employer-employee relationships.
+
+                </p>
+                <p class="ui-body__text ui-text__dark-blue">
+                  We offer automated HR solutions to small and large organisations through our freemium products which are rendered in web and mobile application formats.
+                </p>
+                <p class="ui-body__text ui-text__dark-blue">
+                  Our product is built with features that provide Eazr (easier) solutions to your HR processes, such as employee management, payroll, and documentation, giving you time to focus on actual productive work.
+                </p>
+                <p class="ui-body__text ui-text__dark-blue">
+                  Through our highly intuitive self-service features, employees can also participate in their own onboarding and documentation. They can interact with the company and with their colleagues, thus establishing a more cohesive work culture.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="ui-section is--large">
+    <div class="container">
+      <div class="ui-section__content">
+        <div class="text-center col-lg-6 mx-auto">
+          <h3 class="ui-body__h2 ui-text__dark-blue mb-4">
+            Top features
+          </h3>
+          <p class="ui-body__text ui-text__dark-blue">
+            See all the things you can do on Eazr to improve your HR performance.
+
+          </p>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-lg-6 p-0">
+            <div class="position-r">
+              <img src="./static/images/home/employee_profile.png" class="ui-section__img" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="col-lg-10 mx-auto">
+              <div class="py-5">
+                <h3 class="ui-body__h3 ui-text__dark-blue mb-4">
+                  Employee Management
+                </h3>
+                <p class="ui-body__text ui-text__dark-blue">
+                  Organise your work system. Get all your data in one place and enjoy the ease of accessing them ASAP.
+                </p>
+                <ul class="ui-section__list">
+                  <li class="ui-section__list-item">
+                    <img src="./static/icons/check.svg" alt=""> <span>Staff record</span>
+                  </li>
+                  <li class="ui-section__list-item">
+                    <img src="./static/icons/check.svg" alt=""> <span>Onboarding and offboarding checklist</span>
+                  </li>
+                  <li class="ui-section__list-item">
+                    <img src="./static/icons/check.svg" alt=""> <span>Document centre</span>
+                  </li>
+                  <li class="ui-section__list-item">
+                    <img src="./static/icons/check.svg" alt=""> <span>Work events and calendar</span>
+                  </li>
+                  <li class="ui-section__list-item">
+                    <img src="./static/icons/check.svg" alt=""> <span>Organogram, reports, and analytics</span>
+                  </li>
+                </ul>
+                <a href="#!" class="ui-link ui-link--primary d-inline-flex align-items-center mt-4">
+                  <img src="./static/icons/brochure.svg" class="mr-2 d-block" alt="">Product Brochure
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="ui-section is--large">
+    <div class="container">
+      <div class="ui-section__content">
+        <div class="row align-items-center reverse-section">
+
+          <div class="col-lg-6">
+            <div class="col-lg-10 mx-auto">
+              <div class="py-5">
+                <h3 class="ui-body__h3 ui-text__dark-blue mb-4">
+                  Leave Management
+                </h3>
+                <p class="ui-body__text ui-text__dark-blue">
+                  Manage your employees' time off work seamlessly with Eazr.
+                </p>
+                <ul class="ui-section__list">
+                  <li class="ui-section__list-item">
+                    <img src="./static/icons/check.svg" alt=""> <span>Annual leave planner and calendar</span>
+                  </li>
+                  <li class="ui-section__list-item">
+                    <img src="./static/icons/check.svg" alt=""> <span>Leave entitlement</span>
+                  </li>
+                  <li class="ui-section__list-item">
+                    <img src="./static/icons/check.svg" alt=""> <span>Reminders & real-time notifications</span>
+                  </li>
+                  <li class="ui-section__list-item">
+                    <img src="./static/icons/check.svg" alt=""> <span>Much more</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 p-0">
+            <div class="position-r">
+              <img src="./static/images/home/public_holiday.png" class="ui-section__img" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="container pt-5 text-center">
+          <a href="/product" class="ui-btn ui-btn--primary">
+            See All Features <i class="ti-new-window"></i>
+          </a>
+        </div>
+      </div>
+  </section>
+  <section class="ui-section is--large ui-bg__faded">
+    <div class="container">
+      <div class="ui-section__content pb-0">
+        <div class="row align-items-center reverse-section">
+          <div class="col-lg-6 p-0">
+            <div class="position-r">
+              <img src="./static/images/home/5.png" class="ui-section__img mb-0" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="col-lg-10 mx-auto">
+              <div class="py-5">
+                <h3 class="ui-body__h3 ui-text__dark-blue mb-4">
+                  Key Features of EAZR App
+                </h3>
+                <ul class="ui-section__list">
+                  <li class="ui-section__list-item">
+                    <img src="./static/icons/check.svg" alt=""> <span>Run payroll</span>
+                  </li>
+                  <li class="ui-section__list-item">
+                    <img src="./static/icons/check.svg" alt=""> <span>Request and approve leave on the go</span>
+                  </li>
+                  <li class="ui-section__list-item">
+                    <img src="./static/icons/check.svg" alt=""> <span>View and download payslip</span>
+                  </li>
+                  <li class="ui-section__list-item">
+                    <img src="./static/icons/check.svg" alt=""> <span>Access to personal profile</span>
+                  </li>
+                  <li class="ui-section__list-item">
+                    <img src="./static/icons/check.svg" alt=""> <span>Real-time notifications (birthdays, work events, and assigned tasks) </span>
+                  </li>
+                  <li class="ui-section__list-item">
+                    <img src="./static/icons/check.svg" alt=""> <span>Document upload </span>
+                  </li>
+                  <li class="ui-section__list-item">
+                    <img src="./static/icons/check.svg" alt=""> <span>Much more </span>
+                  </li>
+                </ul>
+                <div class="container pt-5 text-left">
+                  <a href="/product" class="ui-btn ui-btn--primary">
+                    Learn more
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+  </section>
+  <section class="ui-section is--large">
+    <div class="ui-section__content container">
+      <div class="col-lg-6 mx-auto">
+        <h3 class="ui-body__h3 ui-text__dark-blue mb-4 pt-5 mt-5 text-center">
+          What our customers say about us
+        </h3>
+      </div>
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container-fluid ">
+              <div class="ui-section__content">
+                <div class="row align-items-center">
+                  <div class="col-lg-6 p-0">
+                    <div class="position-r">
+                      <a href="#!" class="ui-play-btn" data-toggle="modal" data-target="#">
+                        <img src="./static/icons/bi_play-circle-fill.svg" alt="">
+                      </a>
+                      <img src="./static/images/testimonials/slider/1.png" class="ui-section__img" alt="">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="col-lg-10 mx-auto">
+                      <div class="py-5">
+
+                        <p class="ui-body__text-larger ui-text__dark-blue">
+                          “Eazr has helped us at Paystack automate all the streinous processes of managing our numerous employees.”
+                        </p>
+
+                        <div class="mt-5">
+                          <div class="ui-testimonial">
+                            <div class="ui-testimonial__img mr-4">
+                              <img src="./static/images/testimonials/1.png" alt="">
+                            </div>
+                            <div class="ui-testimonial__user">
+                              <h4 class="ui-body__h4 ui-text__dark-blue">Mr. Elijah Bamidele</h4>
+                              <p class="ui-body__text-larger ui-text__dark-blue mb-0">HR Manager at <span class="ui-body__bolder">Paystack Inc.</span></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container-fluid ">
+              <div class="ui-section__content">
+                <div class="row align-items-center">
+                  <div class="col-lg-6 p-0">
+                    <div class="position-r">
+                      <a href="#!" class="ui-play-btn" data-toggle="modal" data-target="#">
+                        <img src="./static/icons/bi_play-circle-fill.svg" alt="">
+                      </a>
+                      <img src="./static/images/testimonials/slider/1.png" class="ui-section__img" alt="">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="col-lg-10 mx-auto">
+                      <div class="py-5">
+
+                        <p class="ui-body__text-larger ui-text__dark-blue">
+                          “Eazr has helped us at Paystack automate all the streinous processes of managing our numerous employees.”
+                        </p>
+
+                        <div class="mt-5">
+                          <div class="ui-testimonial">
+                            <div class="ui-testimonial__img mr-4">
+                              <img src="./static/images/testimonials/1.png" alt="">
+                            </div>
+                            <div class="ui-testimonial__user">
+                              <h4 class="ui-body__h4 ui-text__dark-blue">Mr. Elijah Bamidele</h4>
+                              <p class="ui-body__text-larger ui-text__dark-blue mb-0">HR Manager at <span class="ui-body__bolder">Paystack Inc.</span></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container-fluid ">
+              <div class="ui-section__content">
+                <div class="row align-items-center">
+                  <div class="col-lg-6 p-0">
+                    <div class="position-r">
+                      <a href="#!" class="ui-play-btn" data-toggle="modal" data-target="#">
+                        <img src="./static/icons/bi_play-circle-fill.svg" alt="">
+                      </a>
+                      <img src="./static/images/testimonials/slider/1.png" class="ui-section__img" alt="">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="col-lg-10 mx-auto">
+                      <div class="py-5">
+
+                        <p class="ui-body__text-larger ui-text__dark-blue">
+                          “Eazr has helped us at Paystack automate all the streinous processes of managing our numerous employees.”
+                        </p>
+
+                        <div class="mt-5">
+                          <div class="ui-testimonial">
+                            <div class="ui-testimonial__img mr-4">
+                              <img src="./static/images/testimonials/1.png" alt="">
+                            </div>
+                            <div class="ui-testimonial__user">
+                              <h4 class="ui-body__h4 ui-text__dark-blue">Mr. Elijah Bamidele</h4>
+                              <p class="ui-body__text-larger ui-text__dark-blue mb-0">HR Manager at <span class="ui-body__bolder">Paystack Inc.</span></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-right px-5">
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <i class="ti-arrow-left"></i>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <i class="ti-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section class="ui-section is--small pt-5 pb-5">
+    <div class="container p-0">
+      <div class="mt-3 mb-3 text-center">
+        <h3 class="ui-body__h3 ui-text__dark-blue">Clients & Partners</h3>
+      </div>
+      <div class="ui-section__content">
+        <div class="carousel-wrap">
+          <div class="partners owl-carousel">
+            <!-- <div class="item"> <img src="./static/images/partners/fcmb.png" class="brand-logo" alt=""></div> -->
+            <div class="item"> <img src="./static/images/home/logos/1.png" class="brand-logo" alt=""></div>
+            <div class="item"> <img src="./static/images/home/logos/2.png" class="brand-logo" alt=""></div>
+            <div class="item"> <img src="./static/images/home/logos/3.png" class="brand-logo" alt=""></div>
+            <div class="item"> <img src="./static/images/home/logos/4.png" class="brand-logo" alt=""></div>
+            <div class="item"> <img src="./static/images/home/logos/5.png" class="brand-logo" alt=""></div>
+            <div class="item"> <img src="./static/images/partners/8thgear.jpeg" class="brand-logo" alt=""></div>
+            <div class="item"> <img src="./static/images/partners/ara.jpeg" class="brand-logo" alt=""></div>
+            <div class="item"> <img src="./static/images/partners/buza.jpeg" class="brand-logo" alt=""></div>
+            <div class="item"> <img src="./static/images/partners/dch.png" class="brand-logo" alt=""></div>
+            <div class="item"> <img src="./static/images/partners/handyman.png" class="brand-logo" alt=""></div>
+            <div class="item"> <img src="./static/images/partners/propoor.png" class="brand-logo" alt=""></div>
+            <!-- <div class="item"> <img src="./static/images/partners/remitta.png" class="brand-logo" alt=""></div> -->
+            <div class="item"> <img src="./static/images/partners/star.png" class="brand-logo" alt=""></div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="ui-section is--large ui-bg__dark">
+    <div class="w-100 ui-section__content">
+      <div class="col-lg-6 mx-auto text-center">
+        <h3 class="ui-body__h3 text-white">Say goodbye to the challenges other HR Managers face.</h3>
+        <p class="ui-body__text text-white">
+          What’s the biggest HR challenge your company faces right now? Eazr can help solve it.
+          We have adapted our products and services to offer you convenience in managing your people and
+          processes. Eazr is versatile, easy to use, and customisable for small, medium and large-scale enterprises.
+        </p>
+        <div class="mt-5 d-block d-lg-flex align-items-center justify-content-center text-center">
+          <a href="get_started" class="ui-btn ui-btn--primary d-inline-flex mt-4 mr-0 mr-lg-2">
+            Sign up for free
+          </a>
+          <!-- <a href="#!" class="ui-link ui-link--primary d-inline-flex align-items-center mt-4">
+            <img src="./static/icons/brochure.svg" class="mr-2 d-block" alt="">Product Brochure
+          </a> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="row align-items-start">
+        <div class="col-lg-4">
+          <img src="./static/brand/logo.svg" class="footer-logo" alt="">
+          <div class="col-lg-8 p-0 mt-4">
+            <p class="ui-body__text ui-text__dark-blue">A cloud-based web and Mobile, HRIS and Payroll solution.</p>
+            <div class="footer__social mt-3">
+              <a href="https://twitter.com/EazrHR?s=09" target="_blank"><img src="./static/icons/bi_twitter.svg" alt=""></a>
+              <a href="https://instagram.com/eazrhr?igshid=2cuyjlu7a22d" target="_blank"><img src="./static/icons/bi_instagram.svg" alt=""></a>
+              <a href="https://web.facebook.com/eazrhr" target="_blank"><img src="./static/icons/bi_facebook.svg" alt=""></a>
+              <a href="https://www.linkedin.com/company/eazrhr" target="_blank"><img src="./static/icons/bi_linkedin.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="row align-items-start">
+            <div class="col-lg-3 mt-4">
+              <h4 class="footer__title">Platform</h4>
+              <ul class="footer__list pt-2">
+                <li class="footer__list-item">
+                  <a href="/product" class="footer__list-link">Employee Management</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="/product" class="footer__list-link">Payroll</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="/product" class="footer__list-link">Disbursement</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="/product" class="footer__list-link">Expense tracking
+                  </a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="/product" class="footer__list-link">Leave Management
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 mt-4">
+              <h4 class="footer__title">Company</h4>
+              <ul class="footer__list pt-2">
+                <li class="footer__list-item">
+                  <a href="/company" class="footer__list-link">About us</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="https://medium.com/eazr" target="_blank" class="footer__list-link">Company Blog</a>
+                </li>
+                <!-- <li class="footer__list-item">
+                  <a href="#!" class="footer__list-link">Partner Programs</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#!" class="footer__list-link">Customers</a>
+                </li> -->
+                <!-- <li class="footer__list-item">
+                  <a href="#!" class="footer__list-link">Press</a>
+                </li> -->
+              </ul>
+            </div>
+            <div class="col-lg-3 mt-4">
+              <h4 class="footer__title">Tools</h4>
+              <ul class="footer__list pt-2">
+                <li class="footer__list-item">
+                  <a href="/pricing" class="footer__list-link">Pricing</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="https://eazr.freshdesk.com/support/home" target="_blank" class="footer__list-link">Resources</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="https://eazr.freshdesk.com/support/tickets/new" target="_blank" class="footer__list-link">Support</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 mt-4">
+              <h4 class="footer__title">Sign up for free</h4>
+              <ul class="footer__list pt-2">
+                <!-- <li class="footer__list-item">
+                  <a href="/get_started" class="footer__list-link">Start Free Trial</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#!" class="footer__list-link">Create a Business Case</a>
+                </li> -->
+                <li class="footer__list-item">
+                  <a href="/contact" class="footer__list-link">Contact Us</a>
+                </li>
+                <!-- <li class="footer__list-item">
+                  <a href="#!" class="footer__list-link">Demo</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#!" class="footer__list-link">Live View</a>
+                </li> -->
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom d-block d-lg-flex align-items-center justify-content-between pt-5">
+        <div class="links pt-2">
+          <a href="/terms-and-conditions">Terms & Conditions</a>
+          <a href="/gdpr">GDPR</a>
+        </div>
+        <!-- <div class="store pt-2">
+          <a href="#!"><img src="./static/icons/play_store.png" alt=""></a>
+          <a href="#!"><img src="./static/icons/apple_store.png" alt=""></a>
+        </div> -->
+      </div>
+    </div>
+
+  </footer>
+  <!-- jQuery -->
+  <script src="./packages/jquery/jquery.min.js"></script>
+  <!-- PopperJS -->
+  <script src="./packages/popper/popper.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="./packages/bootstrap/bootstrap.min.js"></script>
+  <!-- AOS -->
+  <script src="./packages/aos/aos.js"></script>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+  <!-- CustomJS -->
+  <!-- Owl Carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="./src/main.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

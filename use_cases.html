@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Use Cases - Eazr</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./packages/bootstrap/bootstrap.min.css">
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="./packages/aos/aos.css">
+  <!-- Themify CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css">
+  <!-- OWL CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css">
+  <!-- Animate -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- App icon -->
+  <link rel="shortcut icon" href="/static/brand/icon.png" type="image/x-icon">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./src/main.css">
+</head>
+
+<body>
+  <header class="ui-header">
+    <div class="container-fluid">
+      <div class="col-lg-10 mx-auto p-0">
+        <nav class="ui-nav">
+          <div class="ui-nav__left">
+            <div class="ui-nav__brand">
+              <a href="/">
+                <img src="./static/brand/logo.svg" alt="Eazr logo">
+              </a>
+            </div>
+            <div class="ui-nav__menu">
+              <ul class="ui-nav__menu-list">
+                <li class="ui-nav__menu-item">
+                  <a href="/product" class="ui-nav__menu-link ui-body__text">Product</a>
+                </li>
+                <li class="ui-nav__menu-item">
+                  <a href="/pricing" class="ui-nav__menu-link ui-body__text">Pricing</a>
+                </li>
+                <li class="ui-nav__menu-item">
+                  <a href="/use_cases" class="ui-nav__menu-link ui-body__text active">Use Cases</a>
+                </li>
+                <li class="ui-nav__menu-item">
+                  <a href="/faq" class="ui-nav__menu-link ui-body__text">FAQs</a>
+                </li>
+                <li class="ui-nav__menu-item">
+                  <a href="/company" class="ui-nav__menu-link ui-body__text ">Company</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="ui-nav__right">
+            <a href="get_started" class="ui-btn ui-btn--primary">Sign up for free</a>
+          </div>
+          <span class="ui-nav-toggle toggleMenu" id="openMenu">
+            <span class="one"></span>
+            <span class="two"></span>
+            <span class="three"></span>
+          </span>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- Navbar (mobile) Start -->
+  <nav class="ui-mobile-nav" id="mobileMenu">
+    <div class="menu w-100">
+      <div class="menu-body">
+        <a href="/" class="menu-link ">
+          Home
+        </a>
+        <a href="/product" class="menu-link ">
+          Product
+        </a>
+        <a href="/pricing" class="menu-link">
+          Pricing
+        </a>
+        <a href="/use_cases" class="menu-link ">
+          Use Cases
+        </a>
+        <a href="/faq" class="menu-link ">
+          FAQs
+        </a>
+        <a href="/company" class="menu-link ">
+          Company
+        </a>
+        <div class="menu-footer">
+          <a href="get_started" class="ui-btn ui-btn--primary w-100">
+            Sign up for free
+          </a>
+        </div>
+      </div>
+
+      <span class="close toggleMenu" id="closeMenu">
+        <i class="ti-close"></i>
+      </span>
+    </div>
+  </nav>
+  <!-- Navbar (mobile) End  -->
+  <section class="ui-hero is--large">
+    <div class="container-fluid">
+      <div class="ui-hero__content">
+        <div class="col-lg-10 mx-auto">
+          <div class="col-lg-10 mx-auto text-center">
+            <div class="py-5">
+              <h1 class="ui-body__h1 ui-text__dark-blue mb-4">
+                Want to know how some of our clients use Eazr?
+              </h1>
+              <p class="ui-body__text ui-text__dark-blue">See how companies and HR Managers use Eazr
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-10 mx-auto">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-lg-3 my-5">
+              <div class="mb-5 text-center">
+                <h4 class="ui-body__h4 ui-text__dark-blue">Businesses</h4>
+              </div>
+              <div class="mt-2">
+                <img src="./static/icons/union_1.svg" class="w-100 d-block mx-auto" alt="">
+              </div>
+            </div>
+            <div class="col-lg-3 my-5">
+              <div class="mb-5 text-center">
+                <h4 class="ui-body__h4 ui-text__dark-blue">Outsourcing Firms</h4>
+              </div>
+              <div class="mt-2">
+                <img src="./static/icons/union_2.svg" class="w-100 d-block mx-auto" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="ui-section is--large">
+    <div class="container-fluid ">
+      <div class="ui-section__content">
+        <div class="row align-items-center  reverse-section">
+          <div class="col-lg-6 position-r z-top">
+            <div class="col-lg-9 mx-auto">
+              <div class="py-5">
+                <h3 class="ui-body__h3 ui-text__dark-blue mb-4">
+                  Businesses
+                </h3>
+                <p class="ui-body__text ui-text__grey">
+                  A software development company in the heart of Lagos has had to reduce its employees’ physical attendance at work in line with the Covid-19 directive. However, it has been difficult to monitor their health and general well-being, as well as their availability for work. This has slashed the staff productivity by over 50% and made it difficult to calculate their work attendance and remuneration accurately.
+                </p>
+                <div class="my-3">
+                  <h4 class="ui-body__h4 ui-text__dark-blue  py-3">Solution</h4>
+                  <p class="ui-body__text ui-text__grey">
+                    They used Eazr Employee Management feature with a workflow that allows employees to—
+                  </p>
+                  <ul class="ui-section__list">
+                    <li class="ui-section__list-item">
+                      <img src="./static/icons/check.svg" alt=""> <span>Apply for leave/remote work.</span>
+                    </li>
+                    <li class="ui-section__list-item">
+                      <img src="./static/icons/check.svg" alt=""> <span>Specify the reason for the request from a dropdown list.</span>
+                    </li>
+                    <li class="ui-section__list-item">
+                      <img src="./static/icons/check.svg" alt=""> <span>Request start and end dates</span>
+                    </li>
+                    <li class="ui-section__list-item">
+                      <img src="./static/icons/check.svg" alt=""> <span>Answer a series of pre-programmed questions that determine the consideration their request will be given.</span>
+                    </li>
+                    <li class="ui-section__list-item">
+                      <img src="./static/icons/check.svg" alt=""> <span>Receive weekly emails that check on their condition while they are away from the office. </span>
+                    </li>
+                    <li class="ui-section__list-item">
+                      <img src="./static/icons/check.svg" alt=""> <span>Report the progress of their remote tasks/projects as well as hindrances like internet signal, phone network issues, etc.</span>
+                    </li>
+                  </ul>
+                  <div class="my-3">
+                    <h4 class="ui-body__h4 ui-text__dark-blue py-3">Benefits</h4>
+                    <ul class="ui-section__list">
+                      <li class="ui-section__list-item">
+                        <img src="./static/icons/check.svg" alt=""> <span>Real-time workflow monitoring through centralised tracking and reporting</span>
+                      </li>
+                      <li class="ui-section__list-item">
+                        <img src="./static/icons/check.svg" alt=""> <span>Secure storage in the Cloud and ease of accessing automatically archived data for auditing</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 p-0">
+            <div class="position-r z-top">
+              <img src="./static/icons/dot-grid__right.svg" class="ui-dotgrid__right" alt="">
+              <img src="./static/images/use/1.png" class="ui-section__img col-lg-8 d-block col-12 mx-auto mt-5" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="ui-section is--large">
+    <div class="container-fluid ">
+      <div class="ui-section__content">
+        <div class="row align-items-center">
+          <div class="col-lg-6 p-0">
+            <div class="position-r z-top">
+              <img src="./static/icons/dot-grid__left.svg" class="ui-dotgrid__left" alt="">
+              <img src="./static/images/use/2.png" class="ui-section__img col-lg-8 d-block col-12 mx-auto mt-5" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 position-r z-top">
+            <div class="col-lg-9 mx-auto">
+              <div class="py-5">
+                <h3 class="ui-body__h3 ui-text__dark-blue mb-4">
+                  Outsourcing Firms
+                </h3>
+                <p class="ui-body__text ui-text__grey">
+                  An outsourcing firm is challenged with the need to accelerate its employee onboarding process to accommodate the growing demand for marketers in the banking industry.
+                </p>
+                <div class="my-3">
+                  <h4 class="ui-body__h4 ui-text__dark-blue  py-3">Solution</h4>
+                  <ul class="ui-section__list">
+                    <li class="ui-section__list-item">
+                      <img src="./static/icons/check.svg" alt=""> <span>Eazr’s self-service feature which allows HR managers from the outsourcing firm to submit onboarding requests.
+                      </span>
+                    </li>
+                    <li class="ui-section__list-item">
+                      <img src="./static/icons/check.svg" alt=""> <span>Documents and processes are tailored to the company’s requirements using intuitive form and workflow design interfaces.
+
+                      </span>
+                    </li>
+                    <li class="ui-section__list-item">
+                      <img src="./static/icons/check.svg" alt="">
+                      <span>
+                        Onboarding requests are automatically routed for proper review and approval.
+                      </span>
+                    </li>
+                    <li class="ui-section__list-item">
+                      <img src="./static/icons/check.svg" alt="">
+                      <span>
+                        Orientation and training programs are scheduled through the workflow and supported by features such as reminders/notifications.
+                      </span>
+                    </li>
+                    <li class="ui-section__list-item">
+                      <img src="./static/icons/check.svg" alt="">
+                      <span>
+                        Newly employed staff can easily receive files containing orientation materials and onboarding documents, append signatures on them electronically, and submit them back.
+
+                      </span>
+                    </li>
+
+                </div>
+                <div class="my-3">
+                  <h4 class="ui-body__h4 ui-text__dark-blue  py-3">Benefits</h4>
+                  <ul class="ui-section__list">
+                    <li class="ui-section__list-item">
+                      <img src="./static/icons/check.svg" alt="">
+                      <span>
+                        Expedited response times and new employee recruiting/onboarding
+                      </span>
+                    </li>
+                    <li class="ui-section__list-item">
+                      <img src="./static/icons/check.svg" alt="">
+                      <span>
+                        Less manual paperwork, leading to less errors and greater efficiency
+                      </span>
+                    </li>
+                    <li class="ui-section__list-item">
+                      <img src="./static/icons/check.svg" alt="">
+                      <span>
+                        Integration of e-signature standardises secure approvals.
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ui-section is--large ui-bg__dark">
+    <div class="w-100 ui-section__content">
+      <div class="col-lg-6 mx-auto text-center">
+        <h3 class="ui-body__h3 text-white">Say goodbye to the challenges other HR Managers face.</h3>
+        <p class="ui-body__text text-white">
+          What’s the biggest HR challenge your company faces right now? Eazr can help solve it.
+          We have adapted our products and services to offer you convenience in managing your people and
+          processes. Eazr is versatile, easy to use, and customisable for small, medium and large-scale enterprises.
+        </p>
+        <div class="mt-5 d-block d-lg-flex align-items-center justify-content-center text-center">
+          <a href="get_started" class="ui-btn ui-btn--primary d-inline-flex mt-4 mr-0 mr-lg-2">
+            Sign up for free
+          </a>
+          <!-- <a href="#!" class="ui-link ui-link--primary d-inline-flex align-items-center mt-4">
+            <img src="./static/icons/brochure.svg" class="mr-2 d-block" alt="">Product Brochure
+          </a> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="row align-items-start">
+        <div class="col-lg-4">
+          <img src="./static/brand/logo.svg" class="footer-logo" alt="">
+          <div class="col-lg-8 p-0 mt-4">
+            <p class="ui-body__text ui-text__dark-blue">A cloud-based web and Mobile, HRIS and Payroll solution.</p>
+            <div class="footer__social mt-3">
+              <a href="https://twitter.com/EazrHR?s=09" target="_blank"><img src="./static/icons/bi_twitter.svg" alt=""></a>
+              <a href="https://instagram.com/eazrhr?igshid=2cuyjlu7a22d" target="_blank"><img src="./static/icons/bi_instagram.svg" alt=""></a>
+              <a href="https://web.facebook.com/eazrhr" target="_blank"><img src="./static/icons/bi_facebook.svg" alt=""></a>
+              <a href="https://www.linkedin.com/company/eazrhr" target="_blank"><img src="./static/icons/bi_linkedin.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="row align-items-start">
+            <div class="col-lg-3 mt-4">
+              <h4 class="footer__title">Platform</h4>
+              <ul class="footer__list pt-2">
+                <li class="footer__list-item">
+                  <a href="/product" class="footer__list-link">Employee Management</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="/product" class="footer__list-link">Payroll</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="/product" class="footer__list-link">Disbursement</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="/product" class="footer__list-link">Expense tracking
+                  </a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="/product" class="footer__list-link">Leave Management
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 mt-4">
+              <h4 class="footer__title">Company</h4>
+              <ul class="footer__list pt-2">
+                <li class="footer__list-item">
+                  <a href="/company" class="footer__list-link">About us</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="https://medium.com/eazr" target="_blank" class="footer__list-link">Company Blog</a>
+                </li>
+                <!-- <li class="footer__list-item">
+                  <a href="#!" class="footer__list-link">Partner Programs</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#!" class="footer__list-link">Customers</a>
+                </li> -->
+                <!-- <li class="footer__list-item">
+                  <a href="#!" class="footer__list-link">Press</a>
+                </li> -->
+              </ul>
+            </div>
+            <div class="col-lg-3 mt-4">
+              <h4 class="footer__title">Tools</h4>
+              <ul class="footer__list pt-2">
+                <li class="footer__list-item">
+                  <a href="/pricing" class="footer__list-link">Pricing</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="https://eazr.freshdesk.com/support/home" target="_blank" class="footer__list-link">Resources</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="https://eazr.freshdesk.com/support/tickets/new" target="_blank" class="footer__list-link">Support</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 mt-4">
+              <h4 class="footer__title">Sign up for free</h4>
+              <ul class="footer__list pt-2">
+                <!-- <li class="footer__list-item">
+                  <a href="/get_started" class="footer__list-link">Start Free Trial</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#!" class="footer__list-link">Create a Business Case</a>
+                </li> -->
+                <li class="footer__list-item">
+                  <a href="/contact" class="footer__list-link">Contact Us</a>
+                </li>
+                <!-- <li class="footer__list-item">
+                  <a href="#!" class="footer__list-link">Demo</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#!" class="footer__list-link">Live View</a>
+                </li> -->
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom d-block d-lg-flex align-items-center justify-content-between pt-5">
+        <div class="links pt-2">
+          <a href="/terms-and-conditions">Terms & Conditions</a>
+          <a href="/gdpr">GDPR</a>
+        </div>
+        <!-- <div class="store pt-2">
+          <a href="#!"><img src="./static/icons/play_store.png" alt=""></a>
+          <a href="#!"><img src="./static/icons/apple_store.png" alt=""></a>
+        </div> -->
+      </div>
+    </div>
+
+  </footer>
+  <!-- jQuery -->
+  <script src="./packages/jquery/jquery.min.js"></script>
+  <!-- PopperJS -->
+  <script src="./packages/popper/popper.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="./packages/bootstrap/bootstrap.min.js"></script>
+  <!-- AOS -->
+  <script src="./packages/aos/aos.js"></script>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+  <!-- CustomJS -->
+  <!-- Owl Carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="./src/main.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
