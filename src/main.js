@@ -148,13 +148,15 @@
   function setStorage() {
     const adminName = document.getElementById('admin-input').value
     localStorage.setItem('admin', adminName);
+    document.getElementById('reg').removeEventListener('click' , setStorage)
     console.log(adminName);
   }
   function getStorage() {
     const setAdmin = localStorage.getItem('admin');
     const content = document.querySelector('.admin-name')
     content.textContent = setAdmin
+    document.getElementById('success').removeEventListener('load', getStorage);
     console.log(setAdmin);
   }
   const reg = document.getElementById('reg').addEventListener('click' , setStorage);
-  const success = document.getElementById('success').addEventListener('load' , getStorage);
+  const success = document.getElementById('success').addEventListener('load', getStorage);
