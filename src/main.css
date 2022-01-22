@@ -584,7 +584,7 @@ body {
   margin-left: 40px;
   border-radius: 30%;
 }
-#reg-form-container {
+/* #reg-form-container {
   min-width: 100%;
 }
 #reg-form {
@@ -597,7 +597,7 @@ body {
 #reg-form .form-group {
   min-width: 300px;
   margin: 0 25px;
-}
+} */
 #rad {
   padding: 20px;
 }
